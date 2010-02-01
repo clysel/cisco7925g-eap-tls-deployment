@@ -1,0 +1,18 @@
+#summary EAP-TLS deployment for Cisco 7925g
+
+= Introduction =
+
+I needed a tool to deploy 1000 wireless phones
+
+
+= Details =
+
+The requirements to deploy Cisco 7925g is:
+  * A lot of Cisco 7925G's :)
+  * Perl
+    * LWP 5.64
+    * HTTP::Request::Common
+    * Net::Ping
+  * Wireless network - SSID: Cisco, no authetication nor encryption
+  * On host running DHCP, and the Perl script
+  * OpenSSL for building certificats ... the certs/Makefile can build both the CA and RADIUS server certificate.
